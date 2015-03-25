@@ -1,0 +1,26 @@
+<div ng-controller="EnviarCtrl">
+  título<input ng-model="carton.title" type="text"/>
+  sobre...<input ng-model="carton.brief" type="text"/>
+
+  <p>
+    Monero
+    <input ng-model="carton.monero[0].firma" type="text"/>
+  </p>
+
+  <p>
+    Medio
+    <input ng-model="carton.medio[0].link" type="text"/>
+    <input ng-model="carton.medio[0].brief" type="text"/>
+    <input ng-model="carton.medio[0].img_logo" type="text"/>
+  </p>
+
+  <p>
+    Referencia
+    <input ng-model="carton.referencia[0].brief" type="text"/>
+    <input ng-model="carton.referencia[0].link" type="text"/>
+    <input ng-model="carton.referencia[0].medio" type="text"/>
+  </p>
+<input type="button" ng-click="enviar" value="Enviar"/>
+</div>
+
+<script src="scripts/controllers/enviar.js"></script>
